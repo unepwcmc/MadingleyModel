@@ -4,7 +4,7 @@ set :stage, :production
 server "web-production.linode.unep-wcmc.org", user: 'wcmc', roles: %w{app web db}
 
 set :application, "MadingleyModel"
-set :server_name, "MadingleyModel.linode.unep-wcmc.org"
+set :server_name, "MadingleyModel.web-production.linode.unep-wcmc.org"
 set :sudo_user, "wcmc"
 set :app_port, "80"
 
