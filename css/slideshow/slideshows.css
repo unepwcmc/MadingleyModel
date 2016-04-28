@@ -1,0 +1,10 @@
+.ss1_wrapper { position:relative; width:900px; height:500px; margin:50px 0 100px 0; }
+.ss1_wrapper .slideshow { position:relative; width:900px; height:435px; }
+.ss1_wrapper .slideshow_item { width:900px; height:435px; border:none; }
+.ss1_wrapper .slideshow_item .data { display:none; }	
+.ss1_wrapper .slideshow_paging { position:absolute; bottom:10px; right:375px; z-index:11; }
+.ss1_wrapper .slideshow_paging a { display:block; float:left; margin:0 0 0 20px; width:23px; height:23px; background:url('btn_bg.png') no-repeat; font-size:0; }
+.ss1_wrapper .slideshow_paging a:hover { background:url('btn-bg-current.png') no-repeat    }
+.ss1_wrapper .slideshow_paging a.activeSlide { background:url('btn-bg-current.png') no-repeat    }
+.ss1_wrapper .slideshow_box { position:absolute; left:30px; bottom:0; background:url(../../_/css/slideshow/trans-black-70.png); width:340px; height:180px; z-index:10; }
+.ss1_wrapper img{ border:none; }

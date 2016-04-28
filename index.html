@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Madingley Model</title>
+<meta name="title" content="The Madingley Model">
+<meta name="description" content="The Madingley Model simulates how the structure and function of ecosystems at global scales emerges from the underlying ecology of individual organisms.">
+<link rel="stylesheet" type="text/css" href="css/reset-meyers.css"/>
+<link rel="stylesheet" type="text/css" href="css/desktop.css"/>
+<link rel="stylesheet" href="css/slideshow/slideshows.css" />
+<!-- Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>  
+<script src="js/jquery.cycle.all.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script>
+$(document).ready(function (){
+	$('#script-message').hide();
+});
+
+$(function() {	
+	$('#slideshow_1').cycle({
+		fx: 'scrollHorz',		
+		easing: 'easeInOutCirc',
+		speed:  700, 
+		timeout: 5000, 
+		pager: '.ss1_wrapper .slideshow_paging', 
+		
+	});
+	
+	// not using the 'pause' option. instead make the slideshow pause when the mouse is over the whole wrapper
+	$('.ss1_wrapper').mouseenter(function(){
+		$('#slideshow_1').cycle('pause');
+	}).mouseleave(function(){
+		$('#slideshow_1').cycle('resume');
+	});
+	
+	
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); // for this demo disable all links that point to "#"
+	});	
+});
+</script>
+</head>
+<body>
+<div id="script-message"><strong>Note: </strong>To view this page content Javascript must be enabled.</div>
+<div id="header">
+    <div id="header-inner">
+        <img src="images/site-assets/project-name.png" alt="The Madingley Model"/>
+        <nav id="top-nav">
+            <ul>
+            <li><a href="index.html" class="nav-current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="http://research.microsoft.com/en-us/downloads/64300446-2d34-4721-8169-6b48929ba2b0/">Download</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div id="pages" class="group">
+    <div id="pages-inner">
+		<div class="ss1_wrapper">
+			<div class="slideshow_paging"></div>
+			<div id="slideshow_1" class="slideshow">
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="images/slideshow/1.png" alt="photo 2" width="900" height="435" /></a></div>
+				</div>
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="images/slideshow/2.png" alt="photo 3" width="900" height="435" /></a></div>
+				</div>
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="images/slideshow/3.png" alt="photo 1" width="900" height="435" /></a></div>
+				</div>
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="images/slideshow/4.png" alt="photo 4" width="900" height="435" /></a></div>
+				</div>
+			</div><!-- .slideshow -->
+		</div><!-- .ss1_wrapper -->
+    </div><!-- pages-inner -->
+</div><!-- pages -->
+<div id="footer" class="clearfix" >
+    <img src="images/site-assets/footer-logos.png" alt="Microsoft" />
+    <ul>
+        <li><a href="http://research.microsoft.com/c/1060">Contact us</a></li>
+        <li><a href="http://research.microsoft.com/c/1061">Terms of Use</a></li>
+        <li><a href="http://research.microsoft.com/c/1062">Trademarks</a></li>
+        <li><a href="http://research.microsoft.com/c/1063">Privacy Statement</a></li>
+    </ul>
+    <p>&copy;2015 Microsoft.</p>
+</div>
+</body>
+</html>

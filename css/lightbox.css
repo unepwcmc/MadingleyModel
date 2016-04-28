@@ -1,0 +1,63 @@
+#overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#000;
+}
+	
+#lightbox{
+	background:url(../images/gallery/loader.gif) no-repeat center;
+	position:absolute;
+	background-color:#FFF;
+	text-align:center;
+}
+	
+.content{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:.85em;
+	line-height:1.5;
+	margin:0 auto 7px;
+	padding-bottom:20px;
+	text-align:center;
+	width:730px;
+}
+
+.content h1{
+	font-weight:bold;
+	margin:5px;
+}
+
+.content p{
+	font-size:90%;
+	margin:0 10px;
+}
+
+#lightbox img{
+	margin:15px;
+}
+
+.lbox-thumbs a{
+	margin:10px;
+	display:block;
+	float:left;
+}
+	
+#nav-right{
+	width:50px;
+	height:100%;
+	background:url(../_/css/fancy_nav_right.png) no-repeat 50%;
+	position:absolute;
+	right:0px;
+	cursor:pointer;
+}
+
+#nav-left{
+	width:50px;
+	height:100%;
+	background:url(../_/css/fancy_nav_left.png) no-repeat 50%;
+	position:absolute;
+	left:0px;
+	cursor:pointer;
+}
